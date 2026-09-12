@@ -30,7 +30,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Pinyon+Script&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Pinyon+Script&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../assets/css/davetiye.css" />
@@ -47,13 +47,11 @@
         </p>
 
         <div class="kapak__gorsel">
-          <img
-            class="kapak__yapraklar"
-            src="../assets/svg/kapak-yapraklar.svg"
-            alt=""
-            width="760"
-            height="1030"
-          />
+          <div class="ginkgo" aria-hidden="true">
+            <img class="ginkgo__yaprak ginkgo__yaprak--ust" src="../assets/svg/yaprak.svg" alt="" width="400" height="450" />
+            <img class="ginkgo__yaprak ginkgo__yaprak--sol" src="../assets/svg/yaprak.svg" alt="" width="400" height="450" />
+            <img class="ginkgo__yaprak ginkgo__yaprak--sag" src="../assets/svg/yaprak.svg" alt="" width="400" height="450" />
+          </div>
           <span class="monogram" aria-hidden="true">
             <span class="monogram__harf monogram__harf--o">Ö</span>
             <span class="monogram__harf monogram__harf--e">E</span>
@@ -81,7 +79,8 @@
 
         <p class="majuskul ortala davet__giris">
           BU ÖZEL GÜNÜMÜZDE<br />
-          SİZLERLE BİRLİKTE OLMAKTAN<br />
+          SİZLERLE BİRLİKTE<br />
+          OLMAKTAN<br />
           MUTLULUK DUYARIZ.
         </p>
 
@@ -172,7 +171,7 @@
 
         <h2 class="majuskul ortala baslik">LÜTFEN CEVAP VERİNİZ</h2>
         <p class="majuskul majuskul--ince ortala rsvp__aciklama">
-          KATILIM DURUMUNUZU BİZİMLE PAYLAŞIRSANIZ<br />ÇOK MUTLU OLURUZ.
+          KATILIM DURUMUNUZU<br />BİZİMLE PAYLAŞIRSANIZ<br />ÇOK MUTLU OLURUZ.
         </p>
 
         <form class="form" id="katilimFormu" novalidate>
@@ -244,16 +243,14 @@
           </fieldset>
 
           <p class="alan">
-            <label class="alan__etiket" for="notu">BELİRTMEK İSTEDİĞİNİZ BİR ŞEY</label>
+            <label class="alan__etiket alan__etiket--cumle" for="notu">Dilerseniz bize not bırakabilirsiniz</label>
             <textarea
               class="alan__giris alan__giris--uzun"
               id="notu"
               name="notu"
               rows="4"
               maxlength="600"
-              placeholder="Dilerseniz bize bir not bırakabilirsiniz."
             ></textarea>
-            <span class="alan__ipucu">İSTEĞE BAĞLI</span>
           </p>
 
           <button class="dugme" type="submit" id="gonderDugmesi">
