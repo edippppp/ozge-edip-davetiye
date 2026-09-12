@@ -40,9 +40,16 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   min-height: 100%;
+  width: 100%;
   font-family: var(--serif);
   font-weight: 500;
   color: var(--murekkep);
@@ -93,13 +100,16 @@ svg {
   gap: clamp(1.5rem, 4vw, 2.75rem);
   padding: clamp(1.25rem, 4vw, 3.5rem) clamp(0.75rem, 3vw, 2rem)
     clamp(3rem, 8vw, 5rem);
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* Bir davetiye kanadı = kağıt kart */
 .kanat {
   position: relative;
   width: 100%;
-  max-width: var(--kanat-genislik);
+  min-width: 0;
+  max-width: min(var(--kanat-genislik), calc(100vw - 1.3rem));
   padding: var(--ic-bosluk) clamp(1.5rem, 5vw, 2.5rem);
   background-color: var(--kagit);
   background-image: linear-gradient(
@@ -132,6 +142,34 @@ svg {
   z-index: 1;
 }
 
+/* JPEG'den kırpılmış kanatlar */
+.kanat--foto {
+  padding: 0;
+  min-width: 0;
+  width: 100%;
+}
+
+.kanat--foto::after {
+  display: none;
+}
+
+.kanat--foto img {
+  box-sizing: border-box;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  display: block;
+}
+
+.foto-linkler {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem 1.4rem;
+  margin: 0;
+  padding: 0.9rem 1rem 1.15rem;
+}
+
 /* =========================================================
    Tipografi yardımcıları
    ========================================================= */
@@ -144,6 +182,31 @@ svg {
   line-height: 1.7;
   text-transform: uppercase;
   color: var(--murekkep);
+}
+
+.kanat--davet {
+  position: relative;
+}
+
+.foto-sarma {
+  position: relative;
+}
+
+.foto-kisi {
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  bottom: 13.2%;
+  z-index: 2;
+  margin: 0;
+  padding: 0.22em 0.35em 0.28em;
+  background: #cec7be;
+  text-align: center;
+  font-size: clamp(0.62rem, 2.5vw, 0.84rem);
+  letter-spacing: 0.12em;
+  line-height: 1.25;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 .majuskul--ince {
@@ -832,14 +895,42 @@ svg {
   }
 }
 
+@media (max-width: 67.99rem) {
+  html {
+    scroll-snap-type: y proximity;
+  }
+
+  .davetiye {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch;
+    gap: 1.15rem;
+    padding-left: 0.65rem;
+    padding-right: 0.65rem;
+    width: 100%;
+  }
+
+  .kanat {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    align-self: stretch;
+    scroll-snap-align: start;
+  }
+}
+
 @media (min-width: 68rem) {
   .davetiye {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, var(--kanat-genislik)));
-    align-items: stretch;
+    align-items: start;
     justify-content: center;
     gap: clamp(0.75rem, 1.5vw, 1.25rem);
     row-gap: clamp(1.5rem, 3vw, 2.5rem);
+  }
+
+  .kanat--foto img {
+    width: 100% !important;
   }
 
   .kanat--rsvp {

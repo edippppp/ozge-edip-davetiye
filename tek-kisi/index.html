@@ -33,66 +33,48 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Pinyon+Script&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../assets/css/davetiye.css" />
+    <link rel="stylesheet" href="../assets/css/davetiye.css?v=8" />
   </head>
 
   <!-- data-kisi: davetiyenin kaç kişilik olduğu (1 veya 2) -->
   <body data-kisi="1">
     <main class="davetiye">
-      <!-- ======================= KAPAK ======================= -->
-      <section class="kanat kanat--kapak acilan" aria-label="Davetiye kapağı">
-        <p class="sayin">
-          <span class="sayin__etiket">SAYIN</span>
-          <span class="sayin__nokta" aria-hidden="true"></span>
-        </p>
-
-        <div class="kapak__gorsel">
-          <img
-            class="kapak__kabartma"
-            src="../assets/img/kapak-ginkgo.jpg"
-            alt="Kabartma ginkgo yaprakları ve Özge–Edip monogramı"
-            width="726"
-            height="921"
-          />
-        </div>
-
-        <p class="el-yazisi kapak__isimler">
-          Özge <span class="el-yazisi__ve">ve</span> Edip
-        </p>
-        <p class="majuskul kapak__tarih">07.11.2026</p>
-
-        <a class="kaydir" href="#davet">
-          <span class="kaydir__yazi">DAVETİYEYİ AÇ</span>
-          <span class="kaydir__ok" aria-hidden="true"></span>
-        </a>
+      <!-- Kapak, davet ve program: Davetiye.jpeg'den kırpılmış kanatlar -->
+      <section class="kanat kanat--foto acilan" aria-label="Davetiye kapağı">
+        <img
+          src="../assets/img/panel-kapak.jpg"
+          alt="Özge ve Edip düğün davetiyesi kapağı"
+          width="1128"
+          height="1884"
+          fetchpriority="high"
+          style="width:100%;height:auto;max-width:100%;display:block"
+        />
       </section>
 
-      <!-- ==================== DAVET METNİ ==================== -->
-      <section class="kanat kanat--davet acilan" id="davet" aria-label="Davet">
-        <div class="bordur" aria-hidden="true">
-          <span class="bordur__cizgi"></span>
-          <img class="bordur__yaprak" src="../assets/svg/sus-ginkgo.svg" alt="" width="100" height="90" />
-          <span class="bordur__cizgi"></span>
+      <section class="kanat kanat--foto kanat--davet acilan" id="davet" aria-label="Davet">
+        <div class="foto-sarma">
+          <img
+            src="../assets/img/panel-davet.jpg"
+            alt="Davet metni, tarih ve mekan"
+            width="926"
+            height="1820"
+            style="width:100%;height:auto;max-width:100%;display:block"
+          />
+          <p class="foto-kisi majuskul">
+            DAVETİYEMİZ <span class="davet__kisi-sayi">TEK</span> KİŞİLİKTİR.
+          </p>
         </div>
+      </section>
 
-        <p class="majuskul ortala davet__giris">
-          BU ÖZEL GÜNÜMÜZDE<br />
-          SİZLERLE BİRLİKTE<br />
-          OLMAKTAN<br />
-          MUTLULUK DUYARIZ.
-        </p>
-
-        <p class="el-yazisi ortala davet__isimler">
-          Özge <span class="el-yazisi__ve">ve</span> Edip
-        </p>
-
-        <p class="majuskul ortala davet__tarih">07 KASIM 2026</p>
-
-        <hr class="ayrac" />
-
-        <p class="majuskul ortala davet__mekan">ADDRESS HOTEL EMAAR</p>
-        <p class="majuskul majuskul--ince ortala davet__sehir">İSTANBUL</p>
-        <p class="ortala davet__yol">
+      <section class="kanat kanat--foto kanat--program acilan" aria-label="Program">
+        <img
+          src="../assets/img/panel-program.jpg"
+          alt="Düğün programı"
+          width="732"
+          height="1848"
+          style="width:100%;height:auto;max-width:100%;display:block"
+        />
+        <p class="foto-linkler">
           <a
             class="ince-bag"
             href="https://maps.google.com/?q=Address+Hotel+Emaar+%C4%B0stanbul"
@@ -100,61 +82,6 @@
             rel="noopener"
             >YOL TARİFİ</a
           >
-        </p>
-
-        <p class="majuskul majuskul--ince ortala davet__ailesi">AİLESİ</p>
-        <div class="aileler">
-          <p class="aile">Ayşe &amp; Özgür<br />Yılmazer</p>
-          <p class="aile">Nesrin &amp; Murat<br />Atalay</p>
-        </div>
-
-        <p class="majuskul ortala davet__kisi">
-          DAVETİYEMİZ <span class="davet__kisi-sayi">TEK</span> KİŞİLİKTİR.
-        </p>
-
-        <div class="bordur" aria-hidden="true">
-          <span class="bordur__cizgi"></span>
-          <img class="bordur__yaprak" src="../assets/svg/sus-ginkgo.svg" alt="" width="100" height="90" />
-          <span class="bordur__cizgi"></span>
-        </div>
-      </section>
-
-      <!-- ====================== PROGRAM ====================== -->
-      <section class="kanat kanat--program acilan" aria-label="Program">
-        <h2 class="majuskul ortala baslik">PROGRAM</h2>
-        <hr class="ayrac" />
-
-        <ol class="program">
-          <li class="program__oge">
-            <img class="program__ikon" src="../assets/svg/ikon-ikram.svg" alt="" width="64" height="56" />
-            <span class="program__metin">
-              <span class="majuskul program__saat">18:00</span>
-              <span class="majuskul program__ad">KARŞILAMA &amp;<br />İKRAM</span>
-            </span>
-          </li>
-          <li class="program__oge">
-            <img class="program__ikon" src="../assets/svg/ikon-nikah.svg" alt="" width="64" height="56" />
-            <span class="program__metin">
-              <span class="majuskul program__saat">19:00</span>
-              <span class="majuskul program__ad">NİKÂH</span>
-            </span>
-          </li>
-          <li class="program__oge">
-            <img class="program__ikon" src="../assets/svg/ikon-yemek.svg" alt="" width="64" height="56" />
-            <span class="program__metin">
-              <span class="majuskul program__saat">20:00</span>
-              <span class="majuskul program__ad">YEMEK<br />VE EĞLENCE</span>
-            </span>
-          </li>
-        </ol>
-
-        <hr class="ayrac" />
-
-        <p class="majuskul majuskul--ince ortala program__dilek">
-          ÇOCUKLARA<br />İYİ UYKULAR DİLERİZ.
-        </p>
-
-        <p class="ortala davet__yol">
           <a class="ince-bag" href="../assets/ozge-edip-dugun.ics" download>TAKVİME EKLE</a>
         </p>
       </section>
