@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Özge &amp; Edip — Davetiye Linkleri</title>
+    <meta
+      name="description"
+      content="Özge ve Edip düğün davetiyesi paylaşım paneli. Tek kişilik ve iki kişilik davetiye linklerini buradan kopyalayabilirsiniz."
+    />
+    <meta name="theme-color" content="#ddd5cb" />
+    <meta name="robots" content="noindex" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="tr_TR" />
+    <meta property="og:title" content="Özge &amp; Edip — Düğün Davetiyesi" />
+    <meta
+      property="og:description"
+      content="07 Kasım 2026 · Address Hotel Emaar, İstanbul."
+    />
+    <meta property="og:image" content="assets/img/og.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Pinyon+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/davetiye.css" />
+  </head>
+  <body class="panel">
+    <main class="panel__icerik">
+      <section class="kanat kanat--panel">
+        <div class="bordur" aria-hidden="true">
+          <span class="bordur__cizgi"></span>
+          <img class="bordur__yaprak" src="assets/svg/sus-ginkgo.svg" alt="" width="100" height="90" />
+          <span class="bordur__cizgi"></span>
+        </div>
+
+        <p class="el-yazisi ortala panel__isimler">
+          Özge <span class="el-yazisi__ve">ve</span> Edip
+        </p>
+        <p class="majuskul majuskul--ince ortala">07 KASIM 2026</p>
+        <hr class="ayrac" />
+        <h1 class="majuskul ortala baslik">DAVETİYE LİNKLERİ</h1>
+        <p class="majuskul majuskul--ince ortala panel__aciklama">
+          MİSAFİRLERE GÖNDERECEĞİNİZ İKİ AYRI DAVETİYE.<br />
+          TASARIM VE İÇERİK AYNI; YALNIZCA KİŞİ SAYISI FARKLIDIR.
+        </p>
+
+        <div class="linkler">
+          <article class="link-kart">
+            <p class="majuskul link-kart__baslik">TEK KİŞİLİK</p>
+            <p class="link-kart__yol" data-yol="tek-kisi/">tek-kisi/</p>
+            <div class="link-kart__aksiyon">
+              <a class="ince-bag" href="tek-kisi/">ÖNİZLE</a>
+              <button class="ince-bag" type="button" data-kopyala="tek-kisi/">KOPYALA</button>
+              <a class="ince-bag" data-whatsapp="tek-kisi/" href="#">WHATSAPP</a>
+            </div>
+          </article>
+
+          <article class="link-kart">
+            <p class="majuskul link-kart__baslik">İKİ KİŞİLİK</p>
+            <p class="link-kart__yol" data-yol="iki-kisi/">iki-kisi/</p>
+            <div class="link-kart__aksiyon">
+              <a class="ince-bag" href="iki-kisi/">ÖNİZLE</a>
+              <button class="ince-bag" type="button" data-kopyala="iki-kisi/">KOPYALA</button>
+              <a class="ince-bag" data-whatsapp="iki-kisi/" href="#">WHATSAPP</a>
+            </div>
+          </article>
+        </div>
+
+        <p class="majuskul majuskul--ince ortala panel__not" id="kopyaDurumu" role="status"></p>
+
+        <div class="bordur" aria-hidden="true">
+          <span class="bordur__cizgi"></span>
+          <img class="bordur__yaprak" src="assets/svg/sus-ginkgo.svg" alt="" width="100" height="90" />
+          <span class="bordur__cizgi"></span>
+        </div>
+      </section>
+    </main>
+
+    <script src="assets/js/panel.js"></script>
+  </body>
+</html>

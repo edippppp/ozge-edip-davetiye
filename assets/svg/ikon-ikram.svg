@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 56" width="64" height="56" role="img" aria-hidden="true">
+  <g fill="none" stroke="#6b6152" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- kapak tepesindeki topuz -->
+    <circle cx="32" cy="10.5" r="1.9"/>
+    <path d="M32 12.4v2.4"/>
+    <!-- kapak (cloche) -->
+    <path d="M12.5 30.5a19.5 15.8 0 0 1 39 0"/>
+    <!-- servis tabagi -->
+    <path d="M8 30.5h48"/>
+    <!-- garson eli: avuc, parmaklar ve bilek -->
+    <path d="M17.8 34.6c3 -1 5.8 .1 8.2 1.8 1.9 1.4 3.4 2 5.4 2h4.2c1.5 0 2.3 .6 2.3 1.5"/>
+    <path d="M37.9 39.9h-9.2c-2.4 0-4.6-.7-6.6-2.1l-3.6-2.5"/>
+    <path d="M17.8 34.6 7.6 42"/>
+  </g>
+</svg>

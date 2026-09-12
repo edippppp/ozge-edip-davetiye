@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 56" width="64" height="56" role="img" aria-hidden="true">
+  <g fill="none" stroke="#6b6152" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- catal -->
+    <path d="M13 8v9.5"/>
+    <path d="M18 8v9.5"/>
+    <path d="M23 8v9.5"/>
+    <path d="M13 17.5c0 2.4 1.4 3.6 3.6 4v26.5"/>
+    <path d="M23 17.5c0 2.4-1.4 3.6-3.4 4"/>
+    <path d="M18 21.5v26.5"/>
+    <!-- tabak -->
+    <circle cx="32" cy="28" r="12"/>
+    <circle cx="32" cy="28" r="8.4" stroke-width="0.9" stroke-opacity="0.55"/>
+    <!-- bicak -->
+    <path d="M50.4 8c1.9 3.4 2.8 7.1 2.8 11 0 2.4-1 4-2.6 4.6v24.4"/>
+    <path d="M50.4 8c-1.6 3.4-2.3 7.1-2.3 11 0 2.4.8 4 2.1 4.6"/>
+  </g>
+</svg>
